@@ -1,4 +1,11 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <style>
@@ -54,7 +61,7 @@ svg {
 
 
 
-a {
+button {
 	background-color: #7DE5ED;
 	position: relative;
 	padding: 30px 60px;
@@ -67,7 +74,7 @@ a {
 	overflow: hidden;
 }
 
-a span:nth-child(1) {
+button span:nth-child(1) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -86,7 +93,7 @@ a span:nth-child(1) {
 	}
 }
 
-a span:nth-child(2) {
+button span:nth-child(2) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -105,7 +112,7 @@ a span:nth-child(2) {
 	}
 }
 
-a span:nth-child(3) {
+button span:nth-child(3) {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -124,7 +131,7 @@ a span:nth-child(3) {
 	}
 }
 
-a span:nth-child(4) {
+button span:nth-child(4) {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -146,6 +153,11 @@ a span:nth-child(4) {
 
 </style>
 
+</head>
+<body>
+	
+
+
 
 
 <svg viewBox="0 0 960 300">
@@ -166,15 +178,9 @@ a span:nth-child(4) {
 
 <div class="container" style="display : flex;align-items: center; justify-content: center; flex-direction: column;">
 	<h3>Welcome to one and all for this grand celebration
-		if any help needed!</h3>
+		if any help needed! scroll down <i class="fa-duotone fa-scroll"></i>
+	</h3>
 		<br>
-		<a href="#" target="_blank" onclick="myFuction()">
-			<span> </span>
-			<span> </span>
-			<span> </span>
-			<span> </span>
-			click here
-		</a>
 </div>
 
 
@@ -183,28 +189,212 @@ a span:nth-child(4) {
 		Day - 1 Workshop details
 	</h1>
 
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<div class="card" style="width: 18rem;">
+		<img src="AI.jpg" class="card-img-top" alt="...">
+		<div class="card-body">
+		  <h5 class="card-title">Artificial Intelligents Workshop</h5>
+		  <p class="card-text" id="AI"></p>
+		  <input type="button" value="Details" class="btn btn-success" onclick="play()">
+	  	  <audio id="audio" src="1.mp3"></audio>
+		</div>
+	  </div>
 
-	
-    <script>
-		function play() {
-		  var audio = document.getElementById("audio");
-		  audio.play();
-		}
 
+	  <h1 style="margin-top: 5%;">
+		Day - 2 Technical Events
+	</h1>
 
-		function myFunction() {
-			Swal.fire(
-				'Mr.S.Abishek : 6379926698',
-				'Mr.C.Bharathi: 9597870723',
-			)
-		}
-	  </script>
-	  <input type="button" value="PLAY" onclick="play()">
-	  <audio id="audio" src="1.mp3"></audio>
-  
+	<div class="technicalevent" style="display: flex; flex-direction: row; justify-content: space-around;">
+		<div class="card" style="width: 18rem;">
+			<img src="3.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="pp">Paper presentation</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play1()">
+				<audio id="audio1" src="pp.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="4.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="cc">Code corner</h5>
+			  <p class="card-text"></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play2()">
+				<audio id="audio2" src="cc.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="5.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="tb">Tricked bug</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play3()">
+				<audio id="audio3" src="tb.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="7.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="bt">Brain Teaser</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play4()">
+				<audio id="audio4" src="bt.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="6.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="hoz">Hozanji</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play5()">
+				<audio id="audio5" src="hoz.mp3"></audio>
+			</div>
+		  </div>
 
+		  <h1 style="margin-top: 5%;">
+		Day - 2 Technical Events
+	</h1>
+
+	<div class="technicalevent" style="display: flex; flex-direction: row; justify-content: space-around;">
+		<div class="card" style="width: 18rem;">
+			<img src="3.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="pp">Paper presentation</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play1()">
+				<audio id="audio1" src="pp.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="4.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="cc">Code corner</h5>
+			  <p class="card-text"></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play2()">
+				<audio id="audio2" src="cc.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="5.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="tb">Tricked bug</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play3()">
+				<audio id="audio3" src="tb.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="7.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="bt">Brain Teaser</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play4()">
+				<audio id="audio4" src="bt.mp3"></audio>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="6.webp" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title" id="hoz">Hozanji</h5>
+			  <p class="card-text" ></p>
+			  <input type="button" value="Details" class="btn btn-success" onclick="play5()">
+				<audio id="audio5" src="hoz.mp3"></audio>
+			</div>
+		  </div>
+	</div>
 
 </div>
 
+<script>
+	function play() {
+	  var audio = document.getElementById("audio");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	function play1() {
+	  var audio = document.getElementById("audio1");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play2() {
+	  var audio = document.getElementById("audio2");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play3() {
+	  var audio = document.getElementById("audio3");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play4() {
+	  var audio = document.getElementById("audio4");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play5() {
+	  var audio = document.getElementById("audio5");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play() {
+	  var audio = document.getElementById("audio");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play() {
+	  var audio = document.getElementById("audio");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play() {
+	  var audio = document.getElementById("audio");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	
+	function play() {
+	  var audio = document.getElementById("audio");
+	  audio.play();
+	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	}
+
+	document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+
+
+	function myFunction() {
+		Swal.fire(
+			'contact the coordinators',
+			'Mr.S.Abishek : 6379926698',
+			'Mr.C.Bharathi: 9597870723',
+		)
+	}
+  </script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 <script src="//code.tidio.co/u0dvj8l6a9rmfskmoxtnv8jecjvdwrbw.js" async></script>
+</body>
+</html>
