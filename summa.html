@@ -1,0 +1,202 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+	background-color: #D6E4E5;
+}
+svg {
+    display: block;
+    font: 9.5em 'Montserrat';
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #03001C;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #301E67;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #674188;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #BFDB38;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+
+a {
+	background-color: #7DE5ED;
+	position: relative;
+	padding: 30px 60px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+	color: #999;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font: 700 30px consolas;
+	overflow: hidden;
+}
+
+a span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #171618, #3bff3b);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+a span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #171618, #3bff3b);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+a span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, #171618, #3bff3b);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+a span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #171618, #3bff3b);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+</style>
+
+
+
+<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">REINOX ' 23 </text>
+    <text text-anchor="middle" x="52%" y="80%">REINOX ' 23  </text>
+    
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+
+<div class="container" style="display : flex;align-items: center; justify-content: center; flex-direction: column;">
+	<h3>Welcome to one and all for this grand celebration
+		if any help needed!</h3>
+		<br>
+		<a href="https://youtube.com/c/shortcode" target="_blank">
+			<span> </span>
+			<span> </span>
+			<span> </span>
+			<span> </span>
+			click here
+		</a>
+</div>
+
+
+<div class="container" style=" margin-top: 5%;display : flex;align-items: center; justify-content: center; flex-direction: column;">
+	<h1>
+		Day - 1 Workshop details
+	</h1>
+
+
+	
+    <script>
+		function play() {
+		  var audio = document.getElementById("audio");
+		  audio.play();
+		}
+	  </script>
+  
+	  <input type="button" value="PLAY" onclick="play()">
+	  <audio id="audio" src="1.mp3"></audio>
+  
+
+
+</div>
+
+<script src="//code.tidio.co/u0dvj8l6a9rmfskmoxtnv8jecjvdwrbw.js" async></script>
