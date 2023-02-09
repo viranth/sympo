@@ -168,7 +168,7 @@ a span:nth-child(4) {
 	<h3>Welcome to one and all for this grand celebration
 		if any help needed!</h3>
 		<br>
-		<a href="https://youtube.com/c/shortcode" target="_blank">
+		<a href="https://youtube.com/c/shortcode" target="_blank" onclick="myFuction()">
 			<span> </span>
 			<span> </span>
 			<span> </span>
@@ -190,8 +190,16 @@ a span:nth-child(4) {
 		  var audio = document.getElementById("audio");
 		  audio.play();
 		}
+
+
+		function myFunction() {
+			Swal.fire(
+				'Mr.S.Abishek : 6379926698',
+				'Mr.C.Bharathi: 9597870723',
+			)
+		}
 	  </script>
-  
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	  <input type="button" value="PLAY" onclick="play()">
 	  <audio id="audio" src="1.mp3"></audio>
   
