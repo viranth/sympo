@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Montserrat);
 body{
-	background-color: #D6E4E5;
+	background-color: #CDE990;
+	font-family: 'Poppins', sans-serif;
 }
 svg {
     display: block;
@@ -212,7 +214,7 @@ button span:nth-child(4) {
 					<img src="3.webp" class="card-img-top" alt="...">
 					<div class="card-body">
 					  <h5 class="card-title" id="pp">Paper presentation</h5>
-					  <p class="card-text" ></p>
+					  <p class="card-text" id="pp1" ></p>
 					  <input type="button" value="Details" class="btn btn-success" onclick="play1()">
 						<audio id="audio1" src="pp.mp3"></audio>
 					</div>
@@ -224,7 +226,7 @@ button span:nth-child(4) {
 					<img src="4.webp" class="card-img-top" alt="...">
 					<div class="card-body">
 					  <h5 class="card-title" id="cc">Code corner</h5>
-					  <p class="card-text"></p>
+					  <p class="card-text" id="cc1"></p>
 					  <input type="button" value="Details" class="btn btn-success" onclick="play2()">
 						<audio id="audio2" src="cc.mp3"></audio>
 					</div>
@@ -236,7 +238,7 @@ button span:nth-child(4) {
 					<img src="5.webp" class="card-img-top" alt="...">
 					<div class="card-body">
 					  <h5 class="card-title" id="tb">Tricked bug</h5>
-					  <p class="card-text" ></p>
+					  <p class="card-text" id="tb1"></p>
 					  <input type="button" value="Details" class="btn btn-success" onclick="play3()">
 						<audio id="audio3" src="tb.mp3"></audio>
 					</div>
@@ -247,7 +249,7 @@ button span:nth-child(4) {
 					<img src="7.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
 					  <h5 class="card-title" id="bt">Brain Teaser</h5>
-					  <p class="card-text" ></p>
+					  <p class="card-text" id="bt1" ></p>
 					  <input type="button" value="Details" class="btn btn-success" onclick="play4()">
 						<audio id="audio4" src="bt.mp3"></audio>
 					</div>
@@ -260,7 +262,7 @@ button span:nth-child(4) {
 				<img src="6.webp" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title" id="hoz">Hozanji</h5>
-				  <p class="card-text" ></p>
+				  <p class="card-text" id="hozi" ></p>
 				  <input type="button" value="Details" class="btn btn-success" onclick="play5()">
 					<audio id="audio5" src="hoz.mp3"></audio>
 				</div>
@@ -283,35 +285,35 @@ button span:nth-child(4) {
 	function play1() {
 	  var audio = document.getElementById("audio1");
 	  audio.play();
-	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	  document.getElementById("pp1").innerHTML = "Round 1 :  Open Source Lab, Lecture Hall III, Seminar Hall and Lecture Hall V <br> Timing:  09.45 AM";
 	}
 
 	
 	function play2() {
 	  var audio = document.getElementById("audio2");
 	  audio.play();
-	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	  document.getElementById("cc1").innerHTML = "Round 1 : UG LAB-I and UG LAB-II <br> Timing:  10:00 am <br> Round 2 :UG LAB-I  Timing : 11:00 am";
 	}
 
 	
 	function play3() {
 	  var audio = document.getElementById("audio3");
 	  audio.play();
-	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	  document.getElementById("tb1").innerHTML = " Round 1 : Lecture Hall-I  and Lecture Hall-II<br>Timing : 10:00 am <br> Round 2 : UG LAB-II <br>Timing:  11:00 am";
 	}
 
 	
 	function play4() {
 	  var audio = document.getElementById("audio4");
 	  audio.play();
-	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	  document.getElementById("bt1").innerHTML = "Round 1 : Lecture Hall I and Lecture Hall II<br/> Time :  11:30 am <br> Round 2 : Open Source Lab <br/>Time :  12:30pm";
 	}
 
 	
 	function play5() {
 	  var audio = document.getElementById("audio5");
 	  audio.play();
-	  document.getElementById("AI").innerHTML = "Venue : Assembly Hall <br/> Time : 10.30 A.M";
+	  document.getElementById("hozi").innerHTML = "Venue : Seminar Hall <br/> Time : 11.30 A.M";
 	}
 
 	
